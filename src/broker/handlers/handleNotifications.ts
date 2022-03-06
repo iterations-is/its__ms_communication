@@ -6,7 +6,6 @@ const prisma = new PrismaClient();
 export const handleNotifications = async (message: Message | null) => {
 	if (message) {
 		const data = JSON.parse(message.content.toString());
-		console.log(data);
 
 		await prisma.notification.create({
 			data: {
