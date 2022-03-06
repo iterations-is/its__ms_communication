@@ -15,10 +15,10 @@ export const epAllNotifications = async (req: Request, res: Response) => {
 			where: { userId },
 			orderBy: [
 				{
-					createdAt: 'desc',
+					isRead: 'asc',
 				},
 				{
-					isRead: 'desc',
+					createdAt: 'desc',
 				},
 			],
 		});

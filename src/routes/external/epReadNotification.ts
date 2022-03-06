@@ -18,7 +18,7 @@ export const epReadNotification = async (req: Request, res: Response) => {
 
 		const newReadState = !notification.isRead;
 
-		const notificationUpdated = await prisma.notification.update({
+		await prisma.notification.update({
 			where: {
 				id: notificationId,
 			},
