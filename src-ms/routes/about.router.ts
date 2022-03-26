@@ -11,4 +11,4 @@ aboutRouter.get('/about', (req: Request, res: Response) => {
 	return res.status(200).json(data);
 });
 
-aboutRouter.get('/about/health', (req: Request, res: Response) => res.status(200).json());
+aboutRouter.get('/about/health', (req: Request, res: Response) => res.status(200).end());

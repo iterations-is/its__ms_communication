@@ -1,4 +1,4 @@
-import { BROKER_CHANNEL_EMAILS, BROKER_CHANNEL_NOTIFICATIONS, ChannelConsumer } from '../../src-ms';
+import { BROKER_CHANNEL_EMAILS, BROKER_CHANNEL_NOTIFICATIONS, ChannelConsumer } from '@its/ms';
 import { handleEmails, handleNotifications } from './handlers';
 
 export const channelConsumers: ChannelConsumer[] = [

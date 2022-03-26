@@ -1,6 +1,5 @@
 import { Router } from 'express';
-
-import { mwAuthorization } from '../../src-ms';
+import { mwAuthorization } from '@its/ms';
 import { epAllNotifications, epDeleteNotification, epReadNotification } from './external';
 
 export const externalRouter = Router();

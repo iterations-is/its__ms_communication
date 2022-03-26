@@ -1,2 +1,1 @@
-export * from './addNumbers';
-export * from './reduceNumbers';
+export * from './prisma';
